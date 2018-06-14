@@ -1,0 +1,18 @@
+# Role Requirements are placed here. Some examples are below:
+
+# Install a role from Ansible Galaxy
+# - src: zaiste.nginx
+
+# Install a role from Github
+# - name: essentials
+#   src: https://github.com/zaiste/ansible-essentials
+
+# Install a role from Github using a branch
+#- name: essentials
+#  src: https://github.com/zaiste/ansible-essentials
+#  version: origin/master
+
+# Install a role from Github using a tag
+#- name: essentials
+#  src: https://github.com/zaiste/ansible-essentials
+#  version: 0.0.3
