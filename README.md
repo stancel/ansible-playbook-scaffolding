@@ -9,8 +9,8 @@ How to Use
 
 To use this playbook just run this command.
 
-	1. ansible-galaxy install -r requirements.yml - Assumes you have external roles install
-	2. ansible-playbook master.yml --inventory-file=/path/to/inventory
+	1. ansible-galaxy install -r requirements.yml -p roles/  - Assumes you have external roles install
+	2. ansible-playbook master.yml -e @vars/all_vars.yml -i hosts/production
 
 
 Requirements
