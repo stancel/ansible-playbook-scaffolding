@@ -1,7 +1,11 @@
 # Git Ignore File - Add whatever is needed here
 
+# Mac Files
 .DS_Store
 
+# Ansible Retry Files
 *.retry
 
+# Ansible Vault Password file
+.vault_pass
 

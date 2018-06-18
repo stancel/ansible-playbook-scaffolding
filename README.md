@@ -10,7 +10,10 @@ How to Use
 To use this playbook just run this command.
 
 	1. ansible-galaxy install -r requirements.yml -p roles/  - Assumes you have external roles install
-	2. ansible-playbook master.yml -e @vars/all_vars.yml -i hosts/production
+	2. Create a file called .vault_pass in this folder and put a random string in it for decrypting your sensitive variables. Something like: QSkngTv#KTJ=WXpg6qVR
+	3. Fill out needed variables in vars/all_vars.yml and vars/vault.yml files
+	4. ansible-vault encrypt vars/vault.yml   #Encrypt the sensitive variables
+	5. ansible-playbook master.yml -e @vars/all_vars.yml -e @vars/vault.yml -i hosts/production
 
 
 Requirements
@@ -21,7 +24,7 @@ Place any requirements here, if any, for running this playbook.
 Variables
 ------------
 
-Give information about what variables must be filled out to run this playbook along with where to fill them out.
+See the `vars/all_vars.yml` and `var/vault.yml` files for all of the needed variable values to fill out.
 
 
 Roles
